@@ -58,13 +58,15 @@ main h2 {
 .feature-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    gap: 150px;
 }
 
 .feature-card {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 200px;
+    height: 200px;
     text-decoration: none;
     color: #fff;
     background-color: #3498db;
@@ -78,6 +80,61 @@ main h2 {
     transform: scale(1.05);
     background-color: #2980b9;
 }
+.updates {
+    display: flex; /* Makes the container a flexbox */
+    justify-content: space-between; /* Aligns boxes with space between them */
+    gap: 20px; /* Adds spacing between boxes */
+}
+
+.map {  
+    flex: 1; 
+    background-color: #e6f7ff; /* Light blue background */
+    border: 1px solid #b3d7ff; /* Slightly darker border */
+    border-radius: 8px; /* Rounded corners */
+    width: 500px;
+    margin-left:40px;
+    padding-left: 40px; 
+    margin: 20px ;
+    padding: 20px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.map h3 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 24px; }
+
+    .latestUpdates {
+    flex: 2;
+    background-color: #e6f7ff; /* Light background color */
+    width: 300px;
+    margin-left:40px;
+    padding-left: 40px;
+    border: 1px solid #b3d7ff; /* Border around the section */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the div */
+    margin: 20px 0; /* Margin above and below the div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.sectionHead {
+    font-size: 24px; /* Larger font size for the heading */
+    color: #0056b3; /* Darker text color */
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center the heading text */
+}
+
+.UpdatesWrap {
+    height: 200px; /* Fixed height for the updates area */
+    width: 100px;
+    overflow: hidden; /* Hide overflow to maintain the height */
+    position: relative; /* Positioning context for marquee */
+}
+
+marquee {
+    font-size: 18px; /* Font size for the marquee text */
+    color: #007bff; /* Blue color for the text */
+    white-space: nowrap; /* Prevent text wrapping */
+}
 
 /* Footer */
 footer {
@@ -87,3 +144,5 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
+
