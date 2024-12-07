@@ -135,6 +135,29 @@ marquee {
     color: #007bff; /* Blue color for the text */
     white-space: nowrap; /* Prevent text wrapping */
 }
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+.stats {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+    margin: 20px; /* Margin around the stats section */
+    padding: 20px; /* Padding inside the stats section */
+    background-color: #e6f7ff; /* Light background color */
+    border: 1px solid #ccc; /* Border for definition */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.counting1, .counting2, .counting3 {
+    flex: 1; /* Allow each counting section to grow equally */
+    text-align: center; /* Center text */
+    padding: 15px; /* Padding inside each counting section */
+    background-color: #abdcf2; /* Light blue background for counting sections */
+    border-radius: 8px; /* Rounded corners */
+    margin: 0 10px; /* Margin between counting sections */
+}
 
 /* Footer */
 footer {
