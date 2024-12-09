@@ -227,6 +227,9 @@ footer{
    height: 8rem;
    background-color: #90774c;
    padding: 1rem;
+   margin-top: 3rem;
+   position: relative;
+   bottom: 0;
    display: grid;
    grid-template-rows: 3rem 1rem;
 }
