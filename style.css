@@ -1,0 +1,265 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #b4955f66;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+    overflow-y: auto;
+}
+::-webkit-scrollbar{
+        width: 5px;
+        height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #aab4bd;
+}
+::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+header{
+    width: 100%;
+    height: 6rem;
+    background-color: #90774c;
+    padding: 0.4rem;
+    display: flex;
+}
+.logo-container{
+    display: flex;
+    margin-left: 2rem;
+}
+.logo-container img{
+    height: 6rem;
+    width: 6rem;
+    color: white;
+    margin-right: 0.8rem;
+    
+}
+h2{
+    line-height: 1rem;
+}
+.logos{
+    margin-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.azadi img{
+    height: 6rem;
+    width: 7rem;
+}
+.satya img{
+    height: 6.5rem;
+    width: 6rem;
+}
+.navbar{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #5a4a2f;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .nav{
+    width: 38%;
+    display: flex;
+}
+.navbar .nav a{
+    padding: 0 0.8rem 0 0.8rem;
+    border-right: 0.01rem solid whitesmoke ;
+    line-height: 2.5rem;
+    color: white;
+    text-decoration: none;
+}
+.navbar .nav a:hover{
+    background-color: rgba(179, 139, 70, 0.5) ;
+}
+main{
+    padding: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.updates{
+    margin-top: 3rem;
+}
+.updtheading{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 25rem;
+    height: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem 0 1rem;
+    text-decoration: black underline;
+}
+.new{
+    height: 20rem;
+    width: 25rem;
+    background-image: linear-gradient(to bottom, #cab48f ,#bb9f6f);
+    box-shadow: 2px 2px 10px black;
+    padding: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.policenews{
+    animation: new 10s linear 2s infinite normal;
+}
+.policenews:hover{
+    animation-play-state: paused;
+}
+.headline{
+    display: flex;
+    position: relative;
+    animation: new 20s linear 2s infinite normal;
+    border-bottom: 1px solid rgba(245, 245, 245,0.7);
+    margin-bottom: 1rem;
+}
+.img{
+    margin-right: 1rem;
+}
+p{
+    margin: 0;
+    font-size: smaller;
+}
+.date{
+    margin-top: 0.7rem;
+    font-size: 1.25rem;
+    opacity: 0.8;
+}
+@keyframes new{
+    0%{
+        top:0;
+    }
+    25%{
+        top: -100px;
+    }
+    50%{
+        top: -150px;
+    }
+    75%{
+        top: -210px;
+    }
+    100%{
+        top: -300px;
+    }
+}
+.dgp{
+    height: fit-content;
+    width: 61%;
+    background-image: linear-gradient(to bottom, #cab48f ,#bb9f6f);
+    margin-top: 1rem;
+    margin-right: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile{
+    /* margin-right: 2rem; */
+    border-bottom: 1px solid rgba(245, 245, 245,0.7);
+    height: 17rem;
+}
+.profile img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+.profile h3{
+    width: 15rem;
+    margin: -1rem 0 -1rem 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background-color: rgb(121, 95, 48);
+    color: whitesmoke;
+}
+.intro{
+    width: 30rem;
+    height: 17rem;
+    padding-left: 2rem;
+    border-bottom: 1px solid rgba(245, 245, 245,0.7);
+}
+.intro h2{
+    text-align: center;
+}
+.message{
+    margin: 0;
+    padding: 1rem;
+}
+.map{
+    width: 40rem;
+    height: 25rem;
+    margin-top: 3rem;
+    margin-left: 25%;
+    padding-left: 3.5rem;
+    box-shadow: 2px 2px 10px black;
+    background-image: linear-gradient(to bottom, #cab48f ,#bb9f6f);
+    border-radius: 1rem;
+}
+.map h2{
+    text-align: center;
+    text-decoration: 2px underline;
+}
+.stats {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+    margin: 3rem 0  0 2rem; /* Margin around the stats section */
+    padding: 1.25rem; /* Padding inside the stats section */
+    background-image: linear-gradient(to bottom, #cab48f ,#bb9f6f);
+    border: 1px solid #ccc; /* Border for definition */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.counting1, .counting2, .counting3 {
+    flex: 1; /* Allow each counting section to grow equally */
+    text-align: center; /* Center text */
+    padding: 2rem; /* Padding inside each counting section */
+    background-color: #e1d4bf; /* Light blue background for counting sections */
+    border-radius: 0.5rem; /* Rounded corners */
+    margin: 0 1.12rem; /* Margin between counting sections */
+    box-shadow: 2px 2px 10px black;
+}
+footer{
+   width: 100%;
+   height: 8rem;
+   background-color: #90774c;
+   padding: 1rem;
+   display: grid;
+   grid-template-rows: 3rem 1rem;
+}
+.social_media{
+    margin: auto;
+}
+.social_media a{
+    margin-right: 0.6rem;
+}
+.social_media a i{
+    font-size: 1.5rem;
+    color: rgb(57, 54, 54);
+}
+.fb:hover{
+    color: blue;
+}
+.fa-square-x-twitter:hover{
+    color:black;
+}
+.fa-square-instagram:hover{
+    color:rgb(224, 7, 105)
+}
+.fa-square-youtube:hover{
+    color: red;
+}
+.fa-linkedin:hover{
+    color: lightskyblue;
+}
+.info{
+    margin: auto;
+}
+.copyright{
+    margin: auto;
+}
+
+
