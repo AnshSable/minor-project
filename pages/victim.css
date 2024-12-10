@@ -1,0 +1,75 @@
+#victim, h2 { 
+    margin: 1rem; 
+} 
+#victim{
+    text-align: center;
+}
+.container { 
+    padding: 20px; 
+} 
+
+form { 
+    background-image: linear-gradient(to bottom, #cab48f ,#bb9f6f); 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+} 
+
+form label { 
+    display: block; 
+    margin: 10px 0 5px; 
+    font-weight: bold; 
+} 
+
+form input, form textarea, form select { 
+    width: 95%; 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #e1d4bf;
+} 
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+} 
+
+table th, table td { 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    text-align: center; 
+} 
+
+table th { 
+    background-color: #004080; 
+    color: white; 
+} 
+table tr:nth-child(odd){
+    background-color: #b4955f; 
+}
+table tr:nth-child(even) { 
+    background-color: whitesmoke; 
+} 
+
+table tr:nth-child(even):hover { 
+    background-color: #d9caaf; 
+} 
+table tr:nth-child(odd):hover{
+    background-color: #d9caaf;
+}
+.btn { 
+    background-color: #2755a5; 
+    color: white; 
+    padding: 8px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 10px; 
+} 
+
+.btn:hover { 
+    background-color: #003366; 
+} 

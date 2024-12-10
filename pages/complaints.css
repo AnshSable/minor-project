@@ -19,7 +19,7 @@ form label {
 } 
 
 form input, form textarea, form select { 
-    width: 100%; 
+    width: 95%; 
     padding: 8px; 
     margin-bottom: 10px; 
     border: 1px solid #ccc; 
@@ -28,7 +28,7 @@ form input, form textarea, form select {
 } 
 
 .btn { 
-    background-color: #004080; 
+    background-color: #2755a5; 
     color: white; 
     padding: 8px 15px; 
     border: none; 
@@ -64,7 +64,6 @@ table th, table td {
     padding: 10px; 
     text-align: center; 
 } 
-
 table th { 
     background-color: #004080; 
     color: white; 

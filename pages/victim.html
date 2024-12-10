@@ -3,25 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/download (1).jpg">
     <title>Victim</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="victim.css">
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="../images/MP-POLICE_0_0.png" alt="Department Logo" class="logo">
-            <h1>Victims</h1>
+            <img src="/images/ca403cb4c75bc9126b82f43d847fcf66-removebg-preview.png" alt="Department Logo" class="logo">
+            <div class="name">
+                <h2>Madhya Pradesh Police</h2>
+                <p>"Desh Bhakti- Jan Seva"</p>
+            </div>
         </div>
-        <div class="header-buttons">
-            <a href="../index.html" class="button">Home</a>
+        <div class="logos">
+            <div class="satya">
+                <img src="/images/1a40e84bbc42c51370d0f33044d90a7e-removebg-preview.png" alt="satya">
+            </div>
+            <div class="azadi">
+                <img src="/images/images-removebg-preview.png" alt="azadi">
+            </div>
         </div>
     </header>
-    <main>
-        <h2>Victim Management</h2>
-        <p>View and record victim details.</p>
-    </main>
+    <div class="navbar">
+        <div class="nav">
+            <a href="http://127.0.0.1:5500/index.html"><i class="fa-solid fa-house-chimney"></i></a>
+            <a href="http://127.0.0.1:5500/pages/fir.html">FIR</a>
+            <a href="http://127.0.0.1:5500/pages/police_employee.html">Employees</a>
+            <a href="http://127.0.0.1:5500/pages/complaints.html">Complaint</a>
+            <a href="http://127.0.0.1:5500/pages/weapon_raw_material.html">Weapons</a> 
+            <a href="http://127.0.0.1:5500/pages/victim.html">Victims</a>
+        </div>
+    </div>
+    <div class="container"> 
+        <!-- Victim Details Form --> 
+        <h1 id="victim">Victim Records Management</h1> 
+        <h2>Add Victim Details</h2> 
+        <form> 
+            <label for="victimName">Victim Name:</label> 
+            <input type="text" id="victimName" placeholder="Enter Victim's Name" required> 
+ 
+            <label for="victimAge">Age:</label> 
+            <input type="number" id="victimAge" placeholder="Enter Victim's Age" required> 
+ 
+            <label for="victimContact">Contact Number:</label> 
+            <input type="text" id="victimContact" placeholder="Enter Contact Number" required> 
+ 
+            <label for="victimAddress">Address:</label> 
+            <textarea id="victimAddress" rows="3" placeholder="Enter Address" required></textarea> 
+ 
+            <label for="incidentDate">Date of Incident:</label> 
+            <input type="date" id="incidentDate" required> 
+ 
+            <label for="incidentDescription">Incident Description:</label> 
+            <textarea id="incidentDescription" rows="4" placeholder="Describe the Incident" required></textarea> 
+ 
+            <button type="submit" class="btn">Submit Details</button> 
+        </form> 
+ 
+        <!-- Victim Records Table --> 
+        <h2>Victim Records</h2> 
+        <table> 
+            <thead> 
+                <tr> 
+                    <th>Victim ID</th> 
+                    <th>Name</th> 
+                    <th>Age</th> 
+                    <th>Contact</th> 
+                    <th>Address</th> 
+                    <th>Date of Incident</th> 
+                    <th>Incident Description</th> 
+                </tr> 
+            </thead> 
+            <tbody> 
+                <!-- Sample Data --> 
+                <tr> 
+                    <td>1</td> 
+                    <td>Mohan Sharma</td> 
+                    <td>35</td> 
+                    <td>+918643526797</td> 
+                    <td>House No.HIG-1, Subhash Nagar Bridge Rd, Shubham Nagar, New Subhash Nagar, Old Subhash Nagar Colony, Govindpura, Bhopal, Madhya Pradesh 462023, India</td> 
+                    <td>2024-05-01</td> 
+                    <td>Robbery at residence</td> 
+                </tr> 
+                <tr> 
+                    <td>2</td> 
+                    <td>Riya Verma</td> 
+                    <td>28</td> 
+                    <td>+919876543210</td> 
+                    <td>H/451-452, E-7, Arera Colony, Bhopal, Madhya Pradesh 462016, India</td> 
+                    <td>2024-05-03</td> 
+                    <td>Assault in a park</td> 
+                </tr> 
+                <tr> 
+                    <td>3</td> 
+                    <td>Kaushal Mishra</td> 
+                    <td>42</td> 
+                    <td>+915551234567</td> 
+                    <td>Usha Preet Complex, F-7, Ist Floor, 42, Malviya Nagar, Bhopal, Madhya Pradesh 462003, India</td> 
+                    <td>2024-05-05</td> 
+                    <td>Theft in workplace</td> 
+                </tr> 
+            </tbody> 
+        </table> 
+    </div> 
     <footer>
-        <p>&copy; 2024 Police Department Management System | All Rights Reserved</p>
+        <div class="social_media">
+            <a href="https://www.facebook.com/MPPoliceDeptt"><i class="fa-brands fa-facebook fb"></i></a>
+            <a href="https://x.com/MPPoliceDeptt"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.instagram.com/mppolicedeptt/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.youtube.com/@madhyapradeshpolice"><i class="fa-brands fa-square-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/mppolice/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="info">
+            <p>Legal Disclaimer - The data provided on this website is only for Informational purpose, in case of any discrepancy, please contact Police Headquarters during working hours/days.</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2018. Madhya Pradesh Police. All rights reserved.Visitor No.:Page last updated on 12/09/2024 12:39:39</p>
+        </div>
     </footer>
 </body>
 </html>
