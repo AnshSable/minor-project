@@ -5,41 +5,41 @@
     text-align: center;
 }
 .container { 
-    padding: 20px; 
+    padding: 1.25rem; 
 } 
 
 form { 
     background-image: linear-gradient(to bottom, #cab48f ,#bb9f6f); 
-    padding: 20px; 
-    border-radius: 8px; 
-    margin-bottom: 20px; 
+    padding: 1.25rem; 
+    border-radius: 0.5rem; 
+    margin-bottom: 1.25rem; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
 } 
 
 form label { 
     display: block; 
-    margin: 10px 0 5px; 
+    margin: 0.6rem 0 0.4rem; 
     font-weight: bold; 
 } 
 
 form input, form textarea, form select { 
     width: 95%; 
-    padding: 8px; 
-    margin-bottom: 10px; 
+    padding: 0.5rem; 
+    margin-bottom: 0.6rem; 
     border: 1px solid #ccc; 
-    border-radius: 5px; 
+    border-radius: 0.4rem; 
     background-color: #e1d4bf;
 } 
 
 table { 
     width: 100%; 
     border-collapse: collapse; 
-    margin-top: 20px; 
+    margin-top: 1.25rem; 
 } 
 
 table th, table td { 
     border: 1px solid #ddd; 
-    padding: 10px; 
+    padding: 0.6rem; 
     text-align: center; 
 } 
 
@@ -63,11 +63,11 @@ table tr:nth-child(odd):hover{
 .btn { 
     background-color: #2755a5; 
     color: white; 
-    padding: 8px 15px; 
+    padding: 0.5rem 1rem; 
     border: none; 
-    border-radius: 5px; 
+    border-radius: 0.4rem; 
     cursor: pointer; 
-    margin-top: 10px; 
+    margin-top: 0.6rem; 
 } 
 
 .btn:hover { 
