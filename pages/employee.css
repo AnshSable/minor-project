@@ -1,0 +1,87 @@
+h1 {
+    margin: 0;
+}
+
+.container{
+    padding: 20px;
+}
+
+#emply{
+    text-align: center;
+}
+#emply + h3{
+    margin-left: 3rem;
+}
+form {
+    background-image: linear-gradient(to bottom, #cab48f ,#bb9f6f);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    background-color: #e1d4bf;
+}
+
+.btn {
+    padding: 8px 15px;
+    margin-right: 10px;
+    background-color: #2755a5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #003366;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #004080;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.search-container {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3.8rem;
+}
+
+.search-container input {
+    width: 70%;
+    padding: 8px;
+    background-color: #f0e9df;
+}
+.search-container  .btn{
+    margin-right: 85px;
+}

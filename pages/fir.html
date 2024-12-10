@@ -7,6 +7,7 @@
     <title>FIR</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fir.css">
 </head>
 <body>
     <header>
@@ -35,10 +36,60 @@
             <a href="http://127.0.0.1:5500/pages/weapon_raw_material.html">Weapons</a> 
         </div>
     </div>
-    <main>
-        <h2>FIR Details</h2>
-        <p>This page will contain details related to FIR.</p>
-    </main>
+    <div class="container">
+        <!-- FIR Form --> 
+        <h2>Add / Edit FIR</h2> 
+        <form id="fir-form"> 
+            <label for="victimName">Victim Name</label> 
+            <input type="text" id="victimName" placeholder="Enter Victim's Name" required> 
+ 
+            <label for="victimContact">Victim Contact</label> 
+            <input type="text" id="victimContact" placeholder="Enter Victim's Contact" required> 
+ 
+            <label for="accusedName">Accused Name</label> 
+            <input type="text" id="accusedName" placeholder="Enter Accused's Name" required> 
+ 
+            <label for="incidentDescription">Incident Description</label> 
+            <textarea id="incidentDescription" rows="4" placeholder="Describe the incident" required></textarea> 
+ 
+            <label for="officerInCharge">Officer In Charge</label> 
+            <input type="text" id="officerInCharge" placeholder="Enter Officer's Name" required> 
+ 
+            <label for="status">FIR Status</label> 
+            <select id="status" required> 
+                <option value="Open">Open</option> 
+                <option value="Closed">Closed</option> 
+            </select> 
+ 
+            <button type="button" class="btn" onclick="addFIR()">Add New FIR</button> 
+            <button type="button" class="btn" onclick="updateFIR()">Update FIR</button> 
+            <button type="button" class="btn" onclick="closeFIR()">Close FIR</button> 
+        </form> 
+ 
+        
+ 
+        <!-- FIR Table --> 
+        <h2 id="reg">Registered FIRs</h2> 
+        <!-- Search Bar --> 
+        <div class="search-bar"> 
+            <input type="text" id="search" placeholder="Search FIRs..." onkeyup="searchFIR()"> 
+        </div> 
+        <table id="firTable"> 
+            <thead> 
+                <tr> 
+                    <th>FIR ID</th> 
+                    <th>Victim Name</th> 
+                    <th>Accused Name</th> 
+                    <th>Status</th> 
+                    <th>Date Filed</th> 
+                    <th>Actions</th> 
+                </tr> 
+            </thead> 
+            <tbody> 
+                <!-- Dynamic Rows --> 
+            </tbody> 
+        </table> 
+    </div>
     <footer>
         <div class="social_media">
             <a href="https://www.facebook.com/MPPoliceDeptt"><i class="fa-brands fa-facebook fb"></i></a>

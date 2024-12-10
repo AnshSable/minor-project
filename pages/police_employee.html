@@ -7,6 +7,7 @@
     <title>Police Employee Details</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="employee.css">
 </head>
 <body>
     <header>
@@ -35,10 +36,53 @@
             <a href="http://127.0.0.1:5500/pages/weapon_raw_material.html">Weapons</a> 
         </div>
     </div>
-    <main>
-        <h2>Employee Details</h2>
-        <p>View and manage police department employee information.</p>
-    </main>
+    <div class="container">
+        <h1 id="emply">Employee Details</h1>
+        <h3>Add / Edit Employee</h2>
+        <form id="employee-form">
+            <label for="employeeId">Employee ID</label>
+            <input type="text" id="employeeId" placeholder="Enter Employee ID" required>
+
+            <label for="employeeName">Name</label>
+            <input type="text" id="employeeName" placeholder="Enter Employee Name" required>
+
+            <label for="employeeRank">Rank</label>
+            <input type="text" id="employeeRank" placeholder="Enter Rank" required>
+
+            <label for="contactDetails">Contact Details</label>
+            <input type="text" id="contactDetails" placeholder="Enter Contact Details" required>
+
+            <label for="stationAssignment">Station Assignment</label>
+            <input type="text" id="stationAssignment" placeholder="Enter Station Assignment" required>
+
+            <button type="button" class="btn" onclick="addEmployee()">Add New</button>
+            <button type="button" class="btn" onclick="updateEmployee()">Update</button>
+        </form><br><br>
+
+        <!-- Search and Filter -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by Employee Name or ID">
+            <button class="btn">Sort by Name</button>
+        </div>
+
+        <!-- Employee Table -->
+        <h2>Employee List</h2>
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Rank</th>
+                    <th>Contact Details</th>
+                    <th>Station Assignment</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows will be added here -->
+            </tbody>
+        </table>
+    </div>
     <footer>
         <div class="social_media">
             <a href="https://www.facebook.com/MPPoliceDeptt"><i class="fa-brands fa-facebook fb"></i></a>
