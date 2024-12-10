@@ -7,6 +7,7 @@
     <title>Criminals</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="criminal.css">
 </head>
 <body>
     <header>
@@ -35,10 +36,55 @@
             <a href="http://127.0.0.1:5500/pages/weapon_raw_material.html">Weapons</a> 
         </div>
     </div>
-    <main>
-        <h2>Criminal Records</h2>
-        <p>Manage and view details about criminals.</p>
-    </main>
+    <div class="container"> 
+        <!-- Complaint Form --> 
+        <h1 id="complnt">Complaint Management System</h1>
+        <h2>Register / Update Complaint</h2> 
+        <form id="complaint-form"> 
+            <label for="complainantName">Complainant Name</label> 
+            <input type="text" id="complainantName" placeholder="Enter Complainant Name" required> 
+ 
+            <label for="complaintDescription">Description of the Complaint</label> 
+            <textarea id="complaintDescription" rows="4" placeholder="Enter Complaint Description" required></textarea> 
+ 
+            <label for="assignedOfficer">Assigned Officer</label> 
+            <input type="text" id="assignedOfficer" placeholder="Enter Officer Name" required> 
+ 
+            <label for="status">Status</label> 
+            <select id="status" required> 
+                <option value="Pending">Pending</option> 
+                <option value="In Progress">In Progress</option> 
+                <option value="Resolved">Resolved</option> 
+            </select> 
+ 
+            <button type="button" class="btn" onclick="registerComplaint()">Register Complaint</button> 
+            <button type="button" class="btn" onclick="updateComplaint()">Update Status</button> 
+            <button type="button" class="btn" onclick="resolveComplaint()">Resolve Complaint</button> 
+        </form> 
+ 
+        <!-- Search and Filter --> 
+        <div class="search-bar"> 
+            <input type="text" id="search" placeholder="Search complaints..." onkeyup="searchComplaints()"> 
+        </div> 
+ 
+        <!-- Complaint Table --> 
+        <h2>All Complaints</h2> 
+        <table id="complaintTable"> 
+            <thead> 
+                <tr> 
+                    <th>Complaint ID</th> 
+                    <th>Complainant Name</th> 
+                    <th>Description</th> 
+                    <th>Assigned Officer</th> 
+                    <th>Status</th> 
+                    <th>Actions</th> 
+                </tr> 
+            </thead> 
+            <tbody> 
+                <!-- Dynamic Rows --> 
+            </tbody> 
+        </table> 
+    </div> 
     <footer>
         <div class="social_media">
             <a href="https://www.facebook.com/MPPoliceDeptt"><i class="fa-brands fa-facebook fb"></i></a>

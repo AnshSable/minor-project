@@ -7,6 +7,7 @@
     <title>Weapon and Raw Material</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="weapon.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -37,70 +38,48 @@
         </div>
     </div>
     <!-- Main Content -->
-    <main>
-        <h2>Weapon and Raw Material Management</h2>
-        <p>This section helps in managing and tracking weapons and raw materials used in police operations.</p>
-        
-        <!-- Table for Weapons -->
-        <h3>Weapon Details</h3>
-        <table border="1" cellpadding="10" cellspacing="0">
+    <div class="container">
+        <!-- Form Section -->
+        <h1 id="weap">Weapon and Raw Material</h1> 
+        <h2>Add / Issue / Return Weapon</h2>
+        <form id="weapon-form">
+            <label for="weaponId">Weapon ID</label>
+            <input type="text" id="weaponId" placeholder="Enter Weapon ID" required>
+
+            <label for="weaponType">Type of Weapon</label>
+            <input type="text" id="weaponType" placeholder="Enter Weapon Type" required>
+
+            <label for="issuedTo">Issued To (Employee ID)</label>
+            <input type="text" id="issuedTo" placeholder="Enter Employee ID or leave blank" required>
+
+            <label for="weaponStatus">Status</label>
+            <select id="weaponStatus" required>
+                <option value="Available">Available</option>
+                <option value="Issued">Issued</option>
+            </select>
+
+            <button type="button" class="btn" onclick="addWeapon()">Add Weapon</button>
+            <button type="button" class="btn" onclick="issueWeapon()">Issue Weapon</button>
+            <button type="button" class="btn" onclick="returnWeapon()">Return Weapon</button>
+        </form>
+
+        <!-- Weapon Inventory Table -->
+        <h2 id="weap">Weapons Inventory</h2>
+        <table id="weaponTable">
             <thead>
                 <tr>
                     <th>Weapon ID</th>
-                    <th>Weapon Name</th>
                     <th>Type</th>
-                    <th>Quantity</th>
+                    <th>Issued To</th>
                     <th>Status</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>WPN001</td>
-                    <td>Glock 17</td>
-                    <td>Pistol</td>
-                    <td>15</td>
-                    <td>Active</td>
-                </tr>
-                <tr>
-                    <td>WPN002</td>
-                    <td>AK-47</td>
-                    <td>Rifle</td>
-                    <td>8</td>
-                    <td>Maintenance</td>
-                </tr>
+                <!-- Dynamic Rows Will Appear Here -->
             </tbody>
         </table>
-
-        <!-- Table for Raw Materials -->
-        <h3>Raw Material Details</h3>
-        <table border="1" cellpadding="10" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Material ID</th>
-                    <th>Material Name</th>
-                    <th>Purpose</th>
-                    <th>Quantity</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>RM001</td>
-                    <td>Metal Rods</td>
-                    <td>Shield Manufacturing</td>
-                    <td>100</td>
-                    <td>In Stock</td>
-                </tr>
-                <tr>
-                    <td>RM002</td>
-                    <td>Batteries</td>
-                    <td>Equipment Power</td>
-                    <td>50</td>
-                    <td>Low Stock</td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+    </div>
 
     <!-- Footer Section -->
     <footer>
